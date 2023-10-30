@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    display: flex;
+    background-color: #222;
+    font-family: system-ui, sans-serif;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+.tw-article{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: .8rem;
+    justify-content: space-between;
+}
+.tw-article + .tw-article{
+    margin-top: 8px;
+}
+.tw-article .tw-header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tw-article .tw-header .tw-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.tw-article .tw-header span {
+    opacity: .6;
+}
+
+.tw-article img {
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+}
+
+.tw-article .tw-button {
+    margin-left: 16px;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #000;
+    transition: .3s ease background-color;
+}
+.tw-button.is-following{
+    background-color: #666;
+}
+.tw-button.is-following:hover{
+    background-color: rgb(233, 3, 3);
+}
+.tw-button:hover {
+    background-color: #09f;
+}
